@@ -6,21 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://codemoe.cn">
-  <title>CodeMoe</title>
+  <title>Java基础语法 | CodeMoe</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="CodeMoe">
-<meta property="og:url" content="http://codemoe.cn/index.html">
+  <meta name="description" content="一个Java程序可以认为是一系列对象的集合，而这些对象通过调用彼此的方法来协同工作。 对象：对象是类的一个实例，有状态和行为。例如一条狗就是一个对象，它的状态有：颜色，名字，品种；行为有：摇尾巴，叫，吃等。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java基础语法">
+<meta property="og:url" content="http://codemoe.cn/2020/03/01/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html">
 <meta property="og:site_name" content="CodeMoe">
+<meta property="og:description" content="一个Java程序可以认为是一系列对象的集合，而这些对象通过调用彼此的方法来协同工作。 对象：对象是类的一个实例，有状态和行为。例如一条狗就是一个对象，它的状态有：颜色，名字，品种；行为有：摇尾巴，叫，吃等。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2013/12/ZSSDMld.png">
+<meta property="article:published_time" content="2020-03-01T08:06:04.000Z">
+<meta property="article:modified_time" content="2020-03-01T14:12:17.532Z">
 <meta property="article:author" content="CodeMoe">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="Java基础语法">
+<meta property="article:tag" content="Java SE">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.runoob.com/wp-content/uploads/2013/12/ZSSDMld.png">
   
     <link rel="alternative" href="/atom.xml" title="CodeMoe" type="application/atom+xml">
   
@@ -161,123 +166,25 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-CentOS7部署Java11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Java基础语法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/03/01/CentOS7%E9%83%A8%E7%BD%B2Java11/" target="_blank">CentOS7部署Java11</a>
-  
+    <h1 class="article-title" itemprop="name">
+      Java基础语法
     </h1>
   
 
 
   
   
-<a href="/2020/03/01/CentOS7%E9%83%A8%E7%BD%B2Java11/" class="archive-article-date">
-        <time datetime="2020-03-01T14:02:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <a id="more"></a>
-<p>1.使用XShell远程连接到CentOS<br>2.使用<code>rpm -qa | grep jdk</code>命令查看是否需要卸载<br>3.使用<code>rpm -e --nodeps 要卸载的包名</code>命令卸载对应jdk<br>4.使用<code>mmkdir /usr/java</code>命令在/usr下新建文件夹/java<br>5.使用Xftp把本地的Jdk压缩包上传到远端java文件夹中<br>6.使用<code>tar zxvf 上传的包名</code>命令进行解压<br>7.使用<code>vi /etc/profile</code>命令配置环境变量  </p>
-<pre><code>```
-export JAVA_HOME=/usr/java/jdk-11.0.6
-export JRE_HOME=${JAVA_HOME}/jre
-export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:$CLASSPATH
-export JAVA_PATH=${JAVA_HOME}/bin:${JRE_HOME}/bin
-export PATH=$PATH:${JAVA_PATH}
-```  </code></pre><p>8.执行<code>source /etc/profile</code>命令<br>9.执行<code>java -version</code>命令查看版本号<br>10.至此，Java就成功在远端系统部署成功</p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">CentOS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/03/01/CentOS7%E9%83%A8%E7%BD%B2Java11/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
 
-
-
-
-  
-    <article id="post-Java基础语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/03/01/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" target="_blank">Java基础语法</a>
-  
-    </h1>
-  
-
-
-  
-  
 <a href="/2020/03/01/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="archive-article-date">
         <time datetime="2020-03-01T08:06:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
 </a>
@@ -285,6 +192,27 @@ export PATH=$PATH:${JAVA_PATH}
   
   
     
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">1.5k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">5分</span>
+    </span>
+  </span>
+</div>
+
 
   
   </header>
@@ -292,14 +220,357 @@ export PATH=$PATH:${JAVA_PATH}
   <div class="article-entry" itemprop="articleBody">
     
     <h4 id="一个Java程序可以认为是一系列对象的集合，而这些对象通过调用彼此的方法来协同工作。"><a href="#一个Java程序可以认为是一系列对象的集合，而这些对象通过调用彼此的方法来协同工作。" class="headerlink" title="一个Java程序可以认为是一系列对象的集合，而这些对象通过调用彼此的方法来协同工作。"></a><strong>一个Java程序可以认为是一系列对象的集合，而这些对象通过调用彼此的方法来协同工作。</strong></h4><ul>
-<li>对象：对象是类的一个实例，有状态和行为。例如一条狗就是一个对象，它的状态有：颜色，名字，品种；行为有：摇尾巴，叫，吃等。
-    
-    <a class="article-more-a" href="/2020/03/01/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/#more">more >></a>
-    
-    
+<li>对象：对象是类的一个实例，有状态和行为。例如一条狗就是一个对象，它的状态有：颜色，名字，品种；行为有：摇尾巴，叫，吃等。  <a id="more"></a></li>
+<li>类：类是一个模板，它描述一类对象的行为和状态。 </li>
+<li>方法：方法就是行为，一个类可以有很多方法。逻辑运算、数据修改以及所有动作都是在方法中完成的。  </li>
+<li>实例变量：每个对象都有独特的实例变量，对象的状态由这些实例变量的值决定。  <h4 id="第一个Java程序"><a href="#第一个Java程序" class="headerlink" title="第一个Java程序"></a>第一个Java程序</h4></li>
+</ul>
+<pre><code class="java"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>{
+    <span class="comment">/*第一个Java程序 </span>
+<span class="comment">     *它将打印字符串HelloWorld</span>
+<span class="comment">     */</span>
+    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span> </span>{
+        System.out.println(<span class="string">"Hello World"</span>); <span class="comment">// 打印 Hello World</span>
+    }
+}</code></pre>
+<ul>
+<li>保存上述代码为HelloWorld.java  </li>
+<li>在终端输入<code>javac HelloWorld.java</code>编译代码  </li>
+<li>再输入<code>java HelloWorld</code>运行程序   <h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4>编写Java程序时，应注意以下几点：  </li>
+</ul>
+<p>1.<strong>大小写敏感</strong>：Java是区分大小写的，所以Hello和hello并不是同一个标识符。<br>2.<strong>类名</strong>：对于所有的类来说，类名的首字母应该大写，如果类名是由多个单词组成的，那么每个单词的首字母都应该大写，例如：<strong>HelloWorld</strong>。<br>3.<strong>方法名</strong>：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，那么后面每个单词首字母大写，例如：<strong>testFangFa</strong>。<br>4.<strong>原文件名</strong>：源文件名必须和类名相同。当保存文件时，应该使用类名作为源文件名保存（切记Java是大小写敏感的），文件的后缀名为.java。（如果文件名和类名不同会导致编译错误）<br>5.<strong>主方法入口</strong>：所有的Java程序由<code>public static void main(String []args)</code>方法开始执行。  </p>
+<h4 id="Java标识符"><a href="#Java标识符" class="headerlink" title="Java标识符"></a>Java标识符</h4><p>Java 所有的组成部分都需要名字。类名、变量名以及方法名都被称为标识符。</p>
+<p>关于 Java 标识符，有以下几点需要注意：</p>
+<ul>
+<li>所有的标识符都应该以字母（A-Z 或者 a-z）,美元符（$）、或者下划线（_）开始</li>
+<li>首字符之后可以是字母（A-Z 或者 a-z）,美元符（$）、下划线（_）或数字的任何字符组合</li>
+<li>关键字不能用作标识符</li>
+<li>标识符是大小写敏感的<ul>
+<li>合法标识符举例：age、$salary、_value、__1_value</li>
+<li>非法标识符举例：123abc、-salary</li>
+</ul>
+</li>
+<li>Java修饰符：像其他语言一样，Java可以使用修饰符来修饰类中方法和属性。主要有两类修饰符：<ul>
+<li>访问控制修饰符 : default, public , protected, private</li>
+<li>非访问控制修饰符 : final, abstract, static, synchronized  <h4 id="Java-变量"><a href="#Java-变量" class="headerlink" title="Java 变量"></a>Java 变量</h4>Java 中主要有如下几种类型的变量</li>
+</ul>
+</li>
+<li>局部变量</li>
+<li>类变量（静态变量）</li>
+<li>成员变量（非静态变量）<h4 id="Java-数组"><a href="#Java-数组" class="headerlink" title="Java 数组"></a>Java 数组</h4>数组是储存在堆上的对象，可以保存多个同类型变量。<h4 id="Java-枚举"><a href="#Java-枚举" class="headerlink" title="Java 枚举"></a>Java 枚举</h4>Java 5.0引入了枚举，枚举限制变量只能是预先设定好的值。使用枚举可以减少代码中的 bug。<br>例如，我们为果汁店设计一个程序，它将限制果汁为小杯、中杯、大杯。这就意味着它不允许顾客点除了这三种尺寸外的果汁。  <h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5></li>
+</ul>
+<pre><code class="java"><span class="class"><span class="keyword">class</span> <span class="title">FreshJuice</span>  </span>{
+    <span class="keyword">enum</span> FreshJuice{ SMALL, MEDIUM, LARGE }
+    FreshJuice size;
+}
+
+<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FreshJuiceTest</span> </span>{
+    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(string []args)</span> </span>{
+        FreshJuice juice = <span class="keyword">new</span> FreshJuice();
+        juice.size = FreshJuice.FreshJuiceSize.MEDIUM ;
+    }
+}</code></pre>
+<blockquote>
+<p><strong>注意</strong>：枚举可以单独声明或者声明在类里面。方法、变量、构造函数也可以在枚举中定义。  </p>
+</blockquote>
+<h4 id="Java关键字"><a href="#Java关键字" class="headerlink" title="Java关键字"></a>Java关键字</h4><p>关键字又称保留字，这些关键字不能用于常量、变量和任何标识符的名称。不只是Java，其他语言也是一样。  </p>
+<table>
+<thead>
+<tr>
+<th align="left">类别</th>
+<th>关键字</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">访问控制</td>
+<td>private</td>
+<td align="center">私有的</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>protected</td>
+<td align="center">受保护的</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>public</td>
+<td align="center">公共的</td>
+</tr>
+<tr>
+<td align="left">类、方法和变量修饰符&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+<td>abstract</td>
+<td align="center">声明抽象</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>class</td>
+<td align="center">类</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>extends</td>
+<td align="center">扩充,继承</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>final</td>
+<td align="center">最终值,不可改变的</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>implements</td>
+<td align="center">实现（接口）</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>interface</td>
+<td align="center">接口</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>native</td>
+<td align="center">&emsp;&emsp;&emsp;本地，原生方法（非 Java 实现）&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>new</td>
+<td align="center">新,创建</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>static</td>
+<td align="center">静态</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>strictfp</td>
+<td align="center">严格,精准</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>synchronized</td>
+<td align="center">线程,同步</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>transient</td>
+<td align="center">短暂</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>volatile</td>
+<td align="center">易失</td>
+</tr>
+<tr>
+<td align="left">程序控制语句</td>
+<td>break</td>
+<td align="center">跳出循环</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>case</td>
+<td align="center">定义一个值以供 switch 选择</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>continue</td>
+<td align="center">继续</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>default</td>
+<td align="center">默认</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>do</td>
+<td align="center">运行</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>else</td>
+<td align="center">否则</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>for</td>
+<td align="center">循环</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>if</td>
+<td align="center">如果</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>instanceof</td>
+<td align="center">实例</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>return</td>
+<td align="center">返回</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>switch</td>
+<td align="center">根据值选择执行</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>while</td>
+<td align="center">循环</td>
+</tr>
+<tr>
+<td align="left">错误处理</td>
+<td>assert</td>
+<td align="center">断言表达式是否为真</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>catch</td>
+<td align="center">捕捉异常</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>finally</td>
+<td align="center">有没有异常都执行</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>throw</td>
+<td align="center">抛出一个异常对象</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>throws</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>try</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left">包相关</td>
+<td>import</td>
+<td align="center">引入</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>package</td>
+<td align="center">包</td>
+</tr>
+<tr>
+<td align="left">基本类型</td>
+<td>boolean</td>
+<td align="center">布尔型</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>byte</td>
+<td align="center">字节型</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>char</td>
+<td align="center">字符型</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>double</td>
+<td align="center">双精度浮点</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>float</td>
+<td align="center">单精度浮点</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>int</td>
+<td align="center">整型</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>long</td>
+<td align="center">长整型</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>short</td>
+<td align="center">短整型</td>
+</tr>
+<tr>
+<td align="left">变量引用</td>
+<td>super</td>
+<td align="center">父类,超类</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>this</td>
+<td align="center">本类</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>void</td>
+<td align="center">无返回值</td>
+</tr>
+<tr>
+<td align="left">保留关键字</td>
+<td>goto</td>
+<td align="center">是关键字，但不能使用</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>const</td>
+<td align="center">是关键字，但不能使用</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>null</td>
+<td align="center">空</td>
+</tr>
+</tbody></table>
+<h4 id="Java注释"><a href="#Java注释" class="headerlink" title="Java注释"></a>Java注释</h4><p>Java和其他语言类似，支持单行或多行注释。<strong>注释</strong>中的字符或者<strong>空行</strong>将被Java编译器忽略。  </p>
+<pre><code class="java"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>{
+    <span class="comment">/*第一个Java程序 </span>
+<span class="comment">     *它将打印字符串HelloWorld</span>
+<span class="comment">     *这是一个多行注释</span>
+<span class="comment">     */</span>
+    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span> </span>{
+        System.out.println(<span class="string">"Hello World"</span>); <span class="comment">// 打印 Hello World ，这是一个单行注释</span>
+    }
+}</code></pre>
+<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><p>在 Java 中，一个类可以由其他类派生。如果你要创建一个类，而且已经存在一个类具有你所需要的属性或方法，那么你可以将新创建的类继承该类。<br>利用继承的方法，可以重用已存在类的方法和属性，而不用重写这些代码。被继承的类称为超类（super class），派生类称为子类（subclass）。</p>
+<h4 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h4><p>在 Java 中，接口可理解为对象间相互通信的协议。接口在继承中扮演着很重要的角色。<br>接口只定义派生要用到的方法，但是方法的具体实现完全取决于派生类。</p>
+<h4 id="Java-源程序与编译型运行区别"><a href="#Java-源程序与编译型运行区别" class="headerlink" title="Java 源程序与编译型运行区别"></a>Java 源程序与编译型运行区别</h4><p>如下图所示：<br>&emsp;<br>&emsp;<br><img src="https://www.runoob.com/wp-content/uploads/2013/12/ZSSDMld.png" alt="Java源程序与编译型运行的区别">  </p>
 
     
 
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          CodeMoe
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://codemoe.cn/2020/03/01/Java基础语法/" title="Java基础语法" target="_blank">http://codemoe.cn/2020/03/01/Java基础语法/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
     
 
   </div>
@@ -328,16 +599,85 @@ export PATH=$PATH:${JAVA_PATH}
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/03/01/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://codemoe.cn/2020/03/01/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2020/03/01/CentOS7%E9%83%A8%E7%BD%B2Java11/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CentOS7部署Java11
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/02/27/%E4%BC%A0%E7%BB%9F%E6%89%8B%E8%89%BA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">传统手艺</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -358,261 +698,14 @@ export PATH=$PATH:${JAVA_PATH}
 
 
 
-  
-    <article id="post-传统手艺" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/02/27/%E4%BC%A0%E7%BB%9F%E6%89%8B%E8%89%BA/" target="_blank">传统手艺</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/02/27/%E4%BC%A0%E7%BB%9F%E6%89%8B%E8%89%BA/" class="archive-article-date">
-        <time datetime="2020-02-27T12:17:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-27</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h3 id="传统手艺不能忘"><a href="#传统手艺不能忘" class="headerlink" title="传统手艺不能忘"></a>传统手艺不能忘</h3>
-    
-    <a class="article-more-a" href="/2020/02/27/%E4%BC%A0%E7%BB%9F%E6%89%8B%E8%89%BA/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">传统手艺</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/02/27/%E4%BC%A0%E7%BB%9F%E6%89%8B%E8%89%BA/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="n-中国近现代史纲要" class="article article-type-n  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/02/27/%E4%B8%AD%E5%9B%BD%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81/" target="_blank">中国近现代史纲要</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/02/27/%E4%B8%AD%E5%9B%BD%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81/" class="archive-article-date">
-        <time datetime="2020-02-27T10:42:21.613Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-27</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h4>导言</h4>中国的近现代史，是指1840年以来中国的历史。其中从1840年鸦片战争爆发到1949年中华人民共和国成立前夕的历史，是中国的近代史；1949年中华人民共和国成立以来的历史，是中国的现代史。
-    
-    <a class="article-more-a" href="/2020/02/27/%E4%B8%AD%E5%9B%BD%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">近现代史</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/02/27/%E4%B8%AD%E5%9B%BD%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/02/27/hello-world/" target="_blank">Hello World</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/02/27/hello-world/" class="archive-article-date">
-        <time datetime="2020-02-27T10:17:34.466Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-27</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-    
-    <a class="article-more-a" href="/2020/02/27/hello-world/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/02/27/hello-world/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -652,8 +745,8 @@ export PATH=$PATH:${JAVA_PATH}
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
