@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://codemoe.cn">
-  <title>CentOS7部署Java11 | CodeMoe</title>
+  <title>2020年计划 | CodeMoe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.使用XShell远程连接到CentOS2.使用rpm -qa | grep jdk命令查看是否需要卸载3.使用rpm -e --nodeps 要卸载的包名命令卸载对应jdk4.使用mmkdir &#x2F;usr&#x2F;java命令在&#x2F;usr下新建文件夹&#x2F;java5.使用Xftp把本地的Jdk压缩包上传到远端java文件夹中6.使用tar zxvf 上传的包名命令进行解压7.使用vi &#x2F;etc&#x2F;profil">
+  <meta name="description" content="今天已经是三月八号了，年前开始的疫情到现在还没有彻底解决，为远在武汉的朋友们祝福，希望病毒早日过去，武汉加油！中国加油！因为疫情的缘故，学校也没有开学，所以目前是网课状态，所以我有足够的时间来复习我的英语，希望开学的补考能顺利通过。今年我的计划如下：    [x]复习四级，在大二的时候通过四级">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CentOS7部署Java11">
-<meta property="og:url" content="http://codemoe.cn/2020/03/01/CentOS7%E9%83%A8%E7%BD%B2Java11/index.html">
+<meta property="og:title" content="2020年计划">
+<meta property="og:url" content="http://codemoe.cn/2020/03/08/2020%E5%B9%B4%E8%AE%A1%E5%88%92/index.html">
 <meta property="og:site_name" content="CodeMoe">
-<meta property="og:description" content="1.使用XShell远程连接到CentOS2.使用rpm -qa | grep jdk命令查看是否需要卸载3.使用rpm -e --nodeps 要卸载的包名命令卸载对应jdk4.使用mmkdir &#x2F;usr&#x2F;java命令在&#x2F;usr下新建文件夹&#x2F;java5.使用Xftp把本地的Jdk压缩包上传到远端java文件夹中6.使用tar zxvf 上传的包名命令进行解压7.使用vi &#x2F;etc&#x2F;profil">
+<meta property="og:description" content="今天已经是三月八号了，年前开始的疫情到现在还没有彻底解决，为远在武汉的朋友们祝福，希望病毒早日过去，武汉加油！中国加油！因为疫情的缘故，学校也没有开学，所以目前是网课状态，所以我有足够的时间来复习我的英语，希望开学的补考能顺利通过。今年我的计划如下：    [x]复习四级，在大二的时候通过四级">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-01T14:02:39.000Z">
-<meta property="article:modified_time" content="2020-03-01T14:12:40.846Z">
+<meta property="article:published_time" content="2020-03-08T13:40:26.000Z">
+<meta property="article:modified_time" content="2020-03-08T13:52:27.944Z">
 <meta property="article:author" content="CodeMoe">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="CentOS">
+<meta property="article:tag" content="日常">
+<meta property="article:tag" content="计划">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="CodeMoe" type="application/atom+xml">
@@ -148,7 +148,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CentOS7部署Java11" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2020年计划" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -156,8 +156,8 @@
         
 
         
-        <a href="/2020/03/01/CentOS7%E9%83%A8%E7%BD%B2Java11/" class="archive-article-date">
-  	<time datetime="2020-03-01T14:02:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
+        <a href="/2020/03/08/2020%E5%B9%B4%E8%AE%A1%E5%88%92/" class="archive-article-date">
+  	<time datetime="2020-03-08T13:40:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
 </a>
         
       </header>
@@ -167,20 +167,15 @@
       <center><p>
   
     <h1 class="article-title_code_ant" itemprop="name">
-      CentOS7部署Java11
+      2020年计划
     </h1>
   
 </p></center>
       
-        <a id="more"></a>
-<p>1.使用XShell远程连接到CentOS<br>2.使用<code>rpm -qa | grep jdk</code>命令查看是否需要卸载<br>3.使用<code>rpm -e --nodeps 要卸载的包名</code>命令卸载对应jdk<br>4.使用<code>mmkdir /usr/java</code>命令在/usr下新建文件夹/java<br>5.使用Xftp把本地的Jdk压缩包上传到远端java文件夹中<br>6.使用<code>tar zxvf 上传的包名</code>命令进行解压<br>7.使用<code>vi /etc/profile</code>命令配置环境变量  </p>
-<pre><code>```
-export JAVA_HOME=/usr/java/jdk-11.0.6
-export JRE_HOME=${JAVA_HOME}/jre
-export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:$CLASSPATH
-export JAVA_PATH=${JAVA_HOME}/bin:${JRE_HOME}/bin
-export PATH=$PATH:${JAVA_PATH}
-```  </code></pre><p>8.执行<code>source /etc/profile</code>命令<br>9.执行<code>java -version</code>命令查看版本号<br>10.至此，Java就成功在远端系统部署成功</p>
+        <p>今天已经是三月八号了，年前开始的疫情到现在还没有彻底解决，为远在武汉的朋友们祝福，希望病毒早日过去，武汉加油！中国加油！<br>因为疫情的缘故，学校也没有开学，所以目前是网课状态，所以我有足够的时间来复习我的英语，希望开学的补考能顺利通过。<br>今年我的计划如下：  </p>
+<ul>
+<li>[x]复习四级，在大二的时候通过四级</li>
+</ul>
 
       
 
@@ -194,11 +189,11 @@ export PATH=$PATH:${JAVA_PATH}
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日常</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">CentOS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">计划</a>
         		</li>
       		
 		</ul>
@@ -254,7 +249,7 @@ export PATH=$PATH:${JAVA_PATH}
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://codemoe.cn/2020/03/01/CentOS7%E9%83%A8%E7%BD%B2Java11/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://codemoe.cn/2020/03/08/2020%E5%B9%B4%E8%AE%A1%E5%88%92/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -268,18 +263,9 @@ export PATH=$PATH:${JAVA_PATH}
   
 <nav id="article-nav">
   
-    <a href="/2020/03/05/HTML%E5%9F%BA%E7%A1%80/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          HTML基础
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/03/01/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java基础语法</div>
+    <a href="/2020/03/08/Markdown%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Markdown高级教程</div>
       <i class="icon-circle-right"></i>
     </a>
   
