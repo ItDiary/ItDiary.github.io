@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://codemoe.cn">
-  <title>Tag: HTML | CodeMoe</title>
+  <title>表格和表单 | CodeMoe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="CodeMoe">
-<meta property="og:url" content="http://codemoe.cn/tags/HTML/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="表格和表单">
+<meta property="og:url" content="http://codemoe.cn/2020/03/10/%E8%A1%A8%E6%A0%BC%E5%92%8C%E8%A1%A8%E5%8D%95/index.html">
 <meta property="og:site_name" content="CodeMoe">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/10/8P9wJf.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/10/8PpkDA.png">
+<meta property="article:published_time" content="2020-03-10T02:55:44.000Z">
+<meta property="article:modified_time" content="2020-03-10T06:45:09.084Z">
 <meta property="article:author" content="CodeMoe">
+<meta property="article:tag" content="Web开发">
+<meta property="article:tag" content="HTML">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/03/10/8P9wJf.png">
   
     <link rel="alternative" href="/atom.xml" title="CodeMoe" type="application/atom+xml">
   
@@ -142,36 +149,90 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-表格和表单" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/10/%E8%A1%A8%E6%A0%BC%E5%92%8C%E8%A1%A8%E5%8D%95/" class="archive-article-date">
+      <header class="article-header">
+
+        
+
+        
+        <a href="/2020/03/10/%E8%A1%A8%E6%A0%BC%E5%92%8C%E8%A1%A8%E5%8D%95/" class="archive-article-date">
   	<time datetime="2020-03-10T02:55:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
 </a>
-        </div>
-    	 
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      <center><p>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/10/%E8%A1%A8%E6%A0%BC%E5%92%8C%E8%A1%A8%E5%8D%95/">表格和表单</a>
+    <h1 class="article-title_code_ant" itemprop="name">
+      表格和表单
     </h1>
   
+</p></center>
+      
+        <p><img src="https://s2.ax1x.com/2020/03/10/8P9wJf.png" alt="8P9wJf.png"></p>
+<a id="more"></a>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>在HTML中,可以使用标签<code>&lt;table&gt;&lt;/table&gt;</code>来创建一个表格,每个表格均有若干行（由 <code>&lt;tr&gt;</code> 标签定义），每行被分割为若干单元格（由 <code>&lt;td&gt;</code> 标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。  </p>
+<pre><code class="html"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span>
+<span class="tag">&lt;<span class="name">html</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">head</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span>
+        <span class="tag">&lt;<span class="name">title</span>&gt;</span>table<span class="tag">&lt;/<span class="name">title</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">body</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">"1"</span>&gt;</span>    
+            <span class="comment">&lt;!-- </span>
+<span class="comment">                border是表格的边框属性</span>
+<span class="comment">                默认值单位为像素(px)</span>
+<span class="comment">                值为0或无此属性是没有边框</span>
+<span class="comment">                如果不定义边框属性</span>
+<span class="comment">                表格将不显示边框</span>
+<span class="comment">                有时这很有用</span>
+<span class="comment">                但是大多数时候</span>
+<span class="comment">                我们希望显示边框</span>
+<span class="comment">            --&gt;</span>
+            <span class="tag">&lt;<span class="name">caption</span>&gt;</span>我是标题<span class="tag">&lt;/<span class="name">caption</span>&gt;</span>    <span class="comment">&lt;!--这个标签代表的是表格的标题--&gt;</span>
+            <span class="tag">&lt;<span class="name">tr</span>&gt;</span>
+            <span class="comment">&lt;!-- </span>
+<span class="comment">                tr就是表格的行,td是表格的列,td是表头</span>
+<span class="comment">                每个表格由 table 标签开始</span>
+<span class="comment">                每个表格行由 tr 标签开始</span>
+<span class="comment">                每个表格数据由 td 标签开始</span>
+<span class="comment">                大多数浏览器会把表头显示为粗体居中的文本 </span>
+<span class="comment">            --&gt;</span>
+                <span class="tag">&lt;<span class="name">th</span>&gt;</span>Heading<span class="tag">&lt;/<span class="name">th</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">th</span>&gt;</span>Another Heading<span class="tag">&lt;/<span class="name">th</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">tr</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">td</span>&gt;</span>row 1, cell 1<span class="tag">&lt;/<span class="name">td</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">td</span>&gt;</span>row 1, cell 2<span class="tag">&lt;/<span class="name">td</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span>
+            <span class="tag">&lt;<span class="name">tr</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="symbol">&amp;nbsp;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span> 
+                <span class="comment">&lt;!--</span>
+<span class="comment">                    &amp;nbsp;是占位符</span>
+<span class="comment">                    在一些浏览器中</span>
+<span class="comment">                    没有内容的表格单元显示得不太好</span>
+<span class="comment">                    如果某个单元格是空的（没有内容）</span>
+<span class="comment">                    浏览器可能无法显示出这个单元格的边框</span>
+<span class="comment">                --&gt;</span>
+                <span class="tag">&lt;<span class="name">td</span>&gt;</span>row 2, cell 2<span class="tag">&lt;/<span class="name">td</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">table</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">html</span>&gt;</span></code></pre>
+<p>这段代码在浏览器中显示为:<br><img src="https://s2.ax1x.com/2020/03/10/8PpkDA.png" alt="示例"></p>
+<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><h4 id="背景颜色"><a href="#背景颜色" class="headerlink" title="背景颜色"></a>背景颜色</h4><h4 id="背景图像"><a href="#背景图像" class="headerlink" title="背景图像"></a>背景图像</h4>
+      
 
-        <div class="article-info info-on-right">
-          
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -187,61 +248,128 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://codemoe.cn/2020/03/10/%E8%A1%A8%E6%A0%BC%E5%92%8C%E8%A1%A8%E5%8D%95/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/05/HTML%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2020-03-05T11:28:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-05</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/03/11/bash%E7%89%B9%E6%80%A7/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          bash特性
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/03/08/2020%E5%B9%B4%E8%AE%A1%E5%88%92/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">2020年计划</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/05/HTML%E5%9F%BA%E7%A1%80/">HTML基础</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Web开发</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#表格"><span class="toc-number">1.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#背景"><span class="toc-number">2.</span> <span class="toc-text">背景</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#背景颜色"><span class="toc-number">2.1.</span> <span class="toc-text">背景颜色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#背景图像"><span class="toc-number">2.2.</span> <span class="toc-text">背景图像</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -264,9 +392,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
