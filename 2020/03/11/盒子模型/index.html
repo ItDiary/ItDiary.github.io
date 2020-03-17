@@ -6,23 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://codemoe.cn">
-  <title>HTML基础 | CodeMoe</title>
+  <title>盒子模型 | CodeMoe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="HTML是什么HTML（超文本标记语言）是一门高级语言，它令我们可以在因特网上展示信息。你所看到的网页，是浏览器对HTML进行解释的结果。要查看一个网页的HTML代码，只需在浏览器菜单栏上点击“查看”，然后选择“源文件”即可。如果你要制作网站的话，学习HTML是不可避免的。即使你用Dreamweaver等工具来制作网站，了解基本的HTML知识也会令你在网站制作过程中倍感轻松，并有利于制作出更好的网">
+  <meta name="description" content="CSS 盒子模型(Box Model)所有HTML元素可以看作盒子，在CSS中，”box model”这一术语是用来设计和布局时使用。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML基础">
-<meta property="og:url" content="http://codemoe.cn/2020/03/05/HTML%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:title" content="盒子模型">
+<meta property="og:url" content="http://codemoe.cn/2020/03/11/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/index.html">
 <meta property="og:site_name" content="CodeMoe">
-<meta property="og:description" content="HTML是什么HTML（超文本标记语言）是一门高级语言，它令我们可以在因特网上展示信息。你所看到的网页，是浏览器对HTML进行解释的结果。要查看一个网页的HTML代码，只需在浏览器菜单栏上点击“查看”，然后选择“源文件”即可。如果你要制作网站的话，学习HTML是不可避免的。即使你用Dreamweaver等工具来制作网站，了解基本的HTML知识也会令你在网站制作过程中倍感轻松，并有利于制作出更好的网">
+<meta property="og:description" content="CSS 盒子模型(Box Model)所有HTML元素可以看作盒子，在CSS中，”box model”这一术语是用来设计和布局时使用。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.ax1x.com/2020/03/05/3HuclR.png">
-<meta property="article:published_time" content="2020-03-05T11:28:49.000Z">
-<meta property="article:modified_time" content="2020-03-10T03:27:35.267Z">
+<meta property="article:published_time" content="2020-03-11T07:54:45.000Z">
+<meta property="article:modified_time" content="2020-03-17T03:59:03.694Z">
 <meta property="article:author" content="CodeMoe">
 <meta property="article:tag" content="Web开发">
-<meta property="article:tag" content="HTML">
+<meta property="article:tag" content="CSS">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.ax1x.com/2020/03/05/3HuclR.png">
   
     <link rel="alternative" href="/atom.xml" title="CodeMoe" type="application/atom+xml">
   
@@ -150,7 +148,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-HTML基础" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-盒子模型" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -158,8 +156,8 @@
         
 
         
-        <a href="/2020/03/05/HTML%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2020-03-05T11:28:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-05</time>
+        <a href="/2020/03/11/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
+  	<time datetime="2020-03-11T07:54:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-11</time>
 </a>
         
       </header>
@@ -169,74 +167,37 @@
       <center><p>
   
     <h1 class="article-title_code_ant" itemprop="name">
-      HTML基础
+      盒子模型
     </h1>
   
 </p></center>
       
-        <h3 id="HTML是什么"><a href="#HTML是什么" class="headerlink" title="HTML是什么"></a>HTML是什么</h3><p>HTML（超文本标记语言）是一门高级语言，它令我们可以在因特网上展示信息。你所看到的网页，是浏览器对HTML进行解释的结果。要查看一个网页的HTML代码，只需在浏览器菜单栏上点击“查看”，然后选择“源文件”即可。如果你要制作网站的话，学习HTML是不可避免的。即使你用Dreamweaver等工具来制作网站，了解基本的HTML知识也会令你在网站制作过程中倍感轻松，并有利于制作出更好的网站。  </p>
-<a id="more"></a>
-<pre><code class="html"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span>
-    <span class="comment">&lt;!--</span>
-<span class="comment">        是html5标准网页声明</span>
-<span class="comment">        支持html5标准的主流浏览器都认识这个声明</span>
-<span class="comment">        &lt;!DOCTYPE&gt; 声明位于文档中的最前面的位置</span>
-<span class="comment">        处于 &lt;html&gt; 标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范</span>
-<span class="comment">    --&gt;</span>
-<span class="tag">&lt;<span class="name">html</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">head</span>&gt;</span>
-        <span class="tag">&lt;<span class="name">title</span>&gt;</span>这里是标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span>
-    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">body</span>&gt;</span>
-        这里是内容
-    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="name">html</span>&gt;</span></code></pre>
-<p>以上就是一个基础的HTML结构，所有的内容(包括标题)都写在<code>&lt;html&gt;&lt;/html&gt;</code>中</p>
-<h3 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h3><p>元素用于结构化HTML文档，并告知浏览器如何呈现网页。一般来说，元素由首标签（start tag）、内容（content）和尾标签（end tag）构成。  </p>
-<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><p>标签（tag）指示元素的起始与结束，所有标签都由“&lt;”及“＞”所围住，如<code>&lt;html&gt;</code>。<br>一般标签成对出现，首标签（start tag）（如<code>&lt;html&gt;</code>）和尾标签（end tag）（如<code>&lt;/html&gt;</code>）。它们唯一的区别在于，尾标签多一条斜杠“/。你通过把内容放在首标签和尾标签之间来对内容进行标记。<br>HTML主要就是各种各样的元素，所以，学习HTML，就是学习使用各种元素。<br>比如，b元素的作用是告诉浏览器介于标签<code>&lt;b&gt;</code>和<code>&lt;/b&gt;</code>之间的文本应以粗体显示。（这里的“b”是“粗体（bold）”的意思。）  </p>
-<blockquote>
-<p>例一：<strong><code>&lt;b&gt;这句话是加粗显示的&lt;/b&gt;</code></strong><br>注：在HTML语言中标签使用小写字母  </p>
-</blockquote>
-<p>标签的具体应用：  </p>
-<pre><code class="html"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span>
-<span class="tag">&lt;<span class="name">html</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">head</span>&gt;</span>
-        <span class="tag">&lt;<span class="name">title</span>&gt;</span>这里是标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span>
-    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">body</span>&gt;</span>
-        <span class="tag">&lt;<span class="name">b</span>&gt;</span>粗体显示<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span>    
-        <span class="tag">&lt;<span class="name">i</span>&gt;</span>斜体显示<span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span>    
-        <span class="tag">&lt;<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">i</span>&gt;</span>加粗斜体显示<span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span>        
-        <span class="tag">&lt;<span class="name">small</span>&gt;</span>小字体显示<span class="tag">&lt;/<span class="name">small</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span>    <span class="tag">&lt;<span class="name">br</span> /&gt;</span>    <span class="tag">&lt;<span class="name">br</span> /&gt;</span>    
-        生而为人，<span class="tag">&lt;<span class="name">br</span> /&gt;</span>不一定做别人的英雄，<span class="tag">&lt;<span class="name">br</span> /&gt;</span>但请一定要做自己的英雄，<span class="tag">&lt;<span class="name">br</span> /&gt;</span>或许每个人的起点不一样，<span class="tag">&lt;<span class="name">br</span> /&gt;</span>所经历的事情也不一样，<span class="tag">&lt;<span class="name">br</span> /&gt;</span>但我们可以改变的是对于生活的态度。
-    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="name">html</span>&gt;</span></code></pre>
-<p>显示结果如下：<br><img src="https://s2.ax1x.com/2020/03/05/3HuclR.png" alt=""></p>
-<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>HTML通过标签告诉浏览器如何展示网页（比如告诉浏览器显示一个换行）。你可以为某些元素附加一些信息，这些附加信息被称为属性（attribute）。<br>例如：  </p>
-<pre><code class="html"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">style</span>=<span class="string">"background-color: #ffff00;"</span>&gt;</span>codemoe.cn<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></code></pre>
-<p>属性应写在元素的首标签上。具体写法是：属性名称（attribute name）后紧跟一个等号（“=”），后面写上用双引号括起来的属性值（attribute value）。<br>HTML里有很多元素，同样也有很多属性。有些属性仅用于个别元素，有些属性可用于很多元素。反之亦然：有些元素只能使用个别属性，有些元素可以使用较多的属性。<br>一般来说，一个元素包括一个首标签（start tag）、零或多个属性（attribute）、一些内容和一个尾标签（end tag）。  </p>
-<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>HTML中的注释使用<code>&lt;!--单行注释--&gt;</code>  </p>
-<blockquote>
-<p>注意：html 注释标签不支持任何的标准属性和事件！  </p>
-</blockquote>
-<pre><code class="html"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span>
-
-&lt;!--
-
-这是一段JavaScript代码
-
-<span class="actionscript"><span class="comment">//--&gt;</span></span>
-
-<span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
-<p>说明：通过上面这样的条件注释可以避免一些浏览器不支持JavaScript，从而把JavaScript代码文本显示在页面上，影响美观！  </p>
-<pre><code class="html"><span class="comment">&lt;!--</span>
-<span class="comment"></span>
-<span class="comment">&lt;p&gt;这是文章的一个段落&lt;/p&gt;</span>
-<span class="comment"></span>
-<span class="comment">&lt;p&gt;这是文章的一个段落&lt;/p&gt;</span>
-<span class="comment"></span>
-<span class="comment">--&gt;</span></code></pre>
-<p>说明：这是一个多行注释，在代码有bug的时候，可以用注释标签来排错！</p>
+        <p>CSS 盒子模型(Box Model)<br>所有HTML元素可以看作盒子，在CSS中，”box model”这一术语是用来设计和布局时使用。</p>
+<a id="more"></a>  
+<p>CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。</p>
+<p>盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。</p>
+<p>下面的图片说明了盒子模型(Box Model)：</p>
+<p>CSS box-model<br>不同部分的说明：</p>
+<p>Margin(外边距) - 清除边框外的区域，外边距是透明的。<br>Border(边框) - 围绕在内边距和内容外的边框。<br>Padding(内边距) - 清除内容周围的区域，内边距是透明的。<br>Content(内容) - 盒子的内容，显示文本和图像。<br>为了正确设置元素在所有浏览器中的宽度和高度，你需要知道的盒模型是如何工作的。</p>
+<p>元素的宽度和高度<br>Remark重要: 当您指定一个CSS元素的宽度和高度属性时，你只是设置内容区域的宽度和高度。要知道，完全大小的元素，你还必须添加填充，边框和边距。.</p>
+<p>下面的例子中的元素的总宽度为300px：</p>
+<p>实例<br>div {<br>    width: 300px;<br>    border: 25px solid green;<br>    padding: 25px;<br>    margin: 25px;<br>}</p>
+<p>尝试一下 »<br>让我们自己算算：<br>300px (宽)</p>
+<ul>
+<li>50px (左 + 右填充)</li>
+<li>50px (左 + 右边框)</li>
+<li>50px (左 + 右边距)<br>= 450px</li>
+</ul>
+<p>试想一下，你只有250像素的空间。让我们设置总宽度为250像素的元素:</p>
+<p>实例<br>div {<br>    width: 220px;<br>    padding: 10px;<br>    border: 5px solid gray;<br>    margin: 0;<br>}</p>
+<p>尝试一下 »<br>最终元素的总宽度计算公式是这样的：</p>
+<p>总元素的宽度=宽度+左填充+右填充+左边框+右边框+左边距+右边距</p>
+<p>元素的总高度最终计算公式是这样的：</p>
+<p>总元素的高度=高度+顶部填充+底部填充+上边框+下边框+上边距+下边距</p>
+<p>浏览器的兼容性问题<br>一旦为页面设置了恰当的 DTD，大多数浏览器都会按照上面的图示来呈现内容。然而 IE 5 和 6 的呈现却是不正确的。根据 W3C 的规范，元素内容占据的空间是由 width 属性设置的，而内容周围的 padding 和 border 值是另外计算的。不幸的是，IE5.X 和 6 在怪异模式中使用自己的非标准模型。这些浏览器的 width 属性不是内容的宽度，而是内容、内边距和边框的宽度的总和。</p>
+<p>虽然有方法解决这个问题。但是目前最好的解决方案是回避这个问题。也就是，不要给元素添加具有指定宽度的内边距，而是尝试将内边距或外边距添加到元素的父元素和子元素。</p>
+<p>IE8 及更早IE版本不支持设置填充的宽度和边框的宽度属性。</p>
+<p>解决IE8及更早版本不兼容问题可以在HTML页面声明 <!DOCTYPE html>即可。</p>
 
       
 
@@ -254,7 +215,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
         		</li>
       		
 		</ul>
@@ -310,7 +271,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://codemoe.cn/2020/03/05/HTML%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://codemoe.cn/2020/03/11/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -324,18 +285,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/06/%E8%8B%B1%E8%AF%AD%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/14/%E5%A4%A7%E5%A4%96%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          英语考试重点
+          大外笔记
         
       </div>
     </a>
   
   
-    <a href="/2020/03/01/CentOS7%E9%83%A8%E7%BD%B2Java11/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CentOS7部署Java11</div>
+    <a href="/2020/03/11/bash%E7%89%B9%E6%80%A7/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">bash特性</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -362,7 +323,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML是什么"><span class="toc-number">1.</span> <span class="toc-text">HTML是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#元素"><span class="toc-number">2.</span> <span class="toc-text">元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#标签"><span class="toc-number">3.</span> <span class="toc-text">标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">4.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注释"><span class="toc-number">5.</span> <span class="toc-text">注释</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>

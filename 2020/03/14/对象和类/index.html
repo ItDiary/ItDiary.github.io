@@ -6,23 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://codemoe.cn">
-  <title>HTML基础 | CodeMoe</title>
+  <title>对象和类 | CodeMoe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="HTML是什么HTML（超文本标记语言）是一门高级语言，它令我们可以在因特网上展示信息。你所看到的网页，是浏览器对HTML进行解释的结果。要查看一个网页的HTML代码，只需在浏览器菜单栏上点击“查看”，然后选择“源文件”即可。如果你要制作网站的话，学习HTML是不可避免的。即使你用Dreamweaver等工具来制作网站，了解基本的HTML知识也会令你在网站制作过程中倍感轻松，并有利于制作出更好的网">
-<meta property="og:type" content="article">
-<meta property="og:title" content="HTML基础">
-<meta property="og:url" content="http://codemoe.cn/2020/03/05/HTML%E5%9F%BA%E7%A1%80/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="对象和类">
+<meta property="og:url" content="http://codemoe.cn/2020/03/14/%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/index.html">
 <meta property="og:site_name" content="CodeMoe">
-<meta property="og:description" content="HTML是什么HTML（超文本标记语言）是一门高级语言，它令我们可以在因特网上展示信息。你所看到的网页，是浏览器对HTML进行解释的结果。要查看一个网页的HTML代码，只需在浏览器菜单栏上点击“查看”，然后选择“源文件”即可。如果你要制作网站的话，学习HTML是不可避免的。即使你用Dreamweaver等工具来制作网站，了解基本的HTML知识也会令你在网站制作过程中倍感轻松，并有利于制作出更好的网">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.ax1x.com/2020/03/05/3HuclR.png">
-<meta property="article:published_time" content="2020-03-05T11:28:49.000Z">
-<meta property="article:modified_time" content="2020-03-10T03:27:35.267Z">
+<meta property="og:image" content="https://s1.ax1x.com/2020/03/14/8ldbx1.png">
+<meta property="article:published_time" content="2020-03-14T13:17:41.000Z">
+<meta property="article:modified_time" content="2020-03-14T13:26:45.266Z">
 <meta property="article:author" content="CodeMoe">
-<meta property="article:tag" content="Web开发">
-<meta property="article:tag" content="HTML">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.ax1x.com/2020/03/05/3HuclR.png">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/03/14/8ldbx1.png">
   
     <link rel="alternative" href="/atom.xml" title="CodeMoe" type="application/atom+xml">
   
@@ -150,7 +147,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-HTML基础" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-对象和类" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -158,8 +155,8 @@
         
 
         
-        <a href="/2020/03/05/HTML%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2020-03-05T11:28:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-05</time>
+        <a href="/2020/03/14/%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/" class="archive-article-date">
+  	<time datetime="2020-03-14T13:17:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
 </a>
         
       </header>
@@ -169,74 +166,36 @@
       <center><p>
   
     <h1 class="article-title_code_ant" itemprop="name">
-      HTML基础
+      对象和类
     </h1>
   
 </p></center>
       
-        <h3 id="HTML是什么"><a href="#HTML是什么" class="headerlink" title="HTML是什么"></a>HTML是什么</h3><p>HTML（超文本标记语言）是一门高级语言，它令我们可以在因特网上展示信息。你所看到的网页，是浏览器对HTML进行解释的结果。要查看一个网页的HTML代码，只需在浏览器菜单栏上点击“查看”，然后选择“源文件”即可。如果你要制作网站的话，学习HTML是不可避免的。即使你用Dreamweaver等工具来制作网站，了解基本的HTML知识也会令你在网站制作过程中倍感轻松，并有利于制作出更好的网站。  </p>
+        <p><img src="https://s1.ax1x.com/2020/03/14/8ldbx1.png" alt="8ldbx1.png">  </p>
 <a id="more"></a>
-<pre><code class="html"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span>
-    <span class="comment">&lt;!--</span>
-<span class="comment">        是html5标准网页声明</span>
-<span class="comment">        支持html5标准的主流浏览器都认识这个声明</span>
-<span class="comment">        &lt;!DOCTYPE&gt; 声明位于文档中的最前面的位置</span>
-<span class="comment">        处于 &lt;html&gt; 标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范</span>
-<span class="comment">    --&gt;</span>
-<span class="tag">&lt;<span class="name">html</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">head</span>&gt;</span>
-        <span class="tag">&lt;<span class="name">title</span>&gt;</span>这里是标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span>
-    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">body</span>&gt;</span>
-        这里是内容
-    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="name">html</span>&gt;</span></code></pre>
-<p>以上就是一个基础的HTML结构，所有的内容(包括标题)都写在<code>&lt;html&gt;&lt;/html&gt;</code>中</p>
-<h3 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h3><p>元素用于结构化HTML文档，并告知浏览器如何呈现网页。一般来说，元素由首标签（start tag）、内容（content）和尾标签（end tag）构成。  </p>
-<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><p>标签（tag）指示元素的起始与结束，所有标签都由“&lt;”及“＞”所围住，如<code>&lt;html&gt;</code>。<br>一般标签成对出现，首标签（start tag）（如<code>&lt;html&gt;</code>）和尾标签（end tag）（如<code>&lt;/html&gt;</code>）。它们唯一的区别在于，尾标签多一条斜杠“/。你通过把内容放在首标签和尾标签之间来对内容进行标记。<br>HTML主要就是各种各样的元素，所以，学习HTML，就是学习使用各种元素。<br>比如，b元素的作用是告诉浏览器介于标签<code>&lt;b&gt;</code>和<code>&lt;/b&gt;</code>之间的文本应以粗体显示。（这里的“b”是“粗体（bold）”的意思。）  </p>
-<blockquote>
-<p>例一：<strong><code>&lt;b&gt;这句话是加粗显示的&lt;/b&gt;</code></strong><br>注：在HTML语言中标签使用小写字母  </p>
-</blockquote>
-<p>标签的具体应用：  </p>
-<pre><code class="html"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span>
-<span class="tag">&lt;<span class="name">html</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">head</span>&gt;</span>
-        <span class="tag">&lt;<span class="name">title</span>&gt;</span>这里是标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span>
-    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">body</span>&gt;</span>
-        <span class="tag">&lt;<span class="name">b</span>&gt;</span>粗体显示<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span>    
-        <span class="tag">&lt;<span class="name">i</span>&gt;</span>斜体显示<span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span>    
-        <span class="tag">&lt;<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">i</span>&gt;</span>加粗斜体显示<span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span>        
-        <span class="tag">&lt;<span class="name">small</span>&gt;</span>小字体显示<span class="tag">&lt;/<span class="name">small</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span>    <span class="tag">&lt;<span class="name">br</span> /&gt;</span>    <span class="tag">&lt;<span class="name">br</span> /&gt;</span>    
-        生而为人，<span class="tag">&lt;<span class="name">br</span> /&gt;</span>不一定做别人的英雄，<span class="tag">&lt;<span class="name">br</span> /&gt;</span>但请一定要做自己的英雄，<span class="tag">&lt;<span class="name">br</span> /&gt;</span>或许每个人的起点不一样，<span class="tag">&lt;<span class="name">br</span> /&gt;</span>所经历的事情也不一样，<span class="tag">&lt;<span class="name">br</span> /&gt;</span>但我们可以改变的是对于生活的态度。
-    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="name">html</span>&gt;</span></code></pre>
-<p>显示结果如下：<br><img src="https://s2.ax1x.com/2020/03/05/3HuclR.png" alt=""></p>
-<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>HTML通过标签告诉浏览器如何展示网页（比如告诉浏览器显示一个换行）。你可以为某些元素附加一些信息，这些附加信息被称为属性（attribute）。<br>例如：  </p>
-<pre><code class="html"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">style</span>=<span class="string">"background-color: #ffff00;"</span>&gt;</span>codemoe.cn<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></code></pre>
-<p>属性应写在元素的首标签上。具体写法是：属性名称（attribute name）后紧跟一个等号（“=”），后面写上用双引号括起来的属性值（attribute value）。<br>HTML里有很多元素，同样也有很多属性。有些属性仅用于个别元素，有些属性可用于很多元素。反之亦然：有些元素只能使用个别属性，有些元素可以使用较多的属性。<br>一般来说，一个元素包括一个首标签（start tag）、零或多个属性（attribute）、一些内容和一个尾标签（end tag）。  </p>
-<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>HTML中的注释使用<code>&lt;!--单行注释--&gt;</code>  </p>
-<blockquote>
-<p>注意：html 注释标签不支持任何的标准属性和事件！  </p>
-</blockquote>
-<pre><code class="html"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span>
 
-&lt;!--
+<p>以 LOL 为例。</p>
+<p>首先，比如 lol 中的英雄，它就是一个类。因为所有的英雄都有对应的属性。例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hero</span> </span>&#123;</span><br><span class="line">    String name; <span class="comment">//名字</span></span><br><span class="line">    <span class="keyword">int</span> attackDamage; <span class="comment">//物理攻击</span></span><br><span class="line">    <span class="keyword">int</span> abilityPower; <span class="comment">//法术强度</span></span><br><span class="line">    <span class="keyword">int</span> armor; <span class="comment">//护甲</span></span><br><span class="line">    <span class="keyword">int</span> magicResistance; <span class="comment">//魔抗</span></span><br><span class="line">    <span class="keyword">float</span> attackSpeed; <span class="comment">//攻击速度</span></span><br><span class="line">    <span class="keyword">int</span> cooldownReduction; <span class="comment">//冷却缩减</span></span><br><span class="line">    <span class="keyword">int</span> criticalStrike; <span class="comment">//暴击率</span></span><br><span class="line">    <span class="keyword">int</span> moveSpeed; <span class="comment">//移动速度</span></span><br><span class="line">    <span class="keyword">int</span> hp; <span class="comment">//血量</span></span><br><span class="line">    <span class="keyword">int</span> mp; <span class="comment">//蓝量</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-这是一段JavaScript代码
+<p>除了属性，英雄还有行为。比如拆塔，坑队友，K头，跳舞等。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hero</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">DestroyTower</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"正在拆塔"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Keng</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"坑了一下队友"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Kb</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"抢到了一个人头"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Dance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"正在跳舞"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<span class="actionscript"><span class="comment">//--&gt;</span></span>
-
-<span class="tag">&lt;/<span class="name">script</span>&gt;</span></code></pre>
-<p>说明：通过上面这样的条件注释可以避免一些浏览器不支持JavaScript，从而把JavaScript代码文本显示在页面上，影响美观！  </p>
-<pre><code class="html"><span class="comment">&lt;!--</span>
-<span class="comment"></span>
-<span class="comment">&lt;p&gt;这是文章的一个段落&lt;/p&gt;</span>
-<span class="comment"></span>
-<span class="comment">&lt;p&gt;这是文章的一个段落&lt;/p&gt;</span>
-<span class="comment"></span>
-<span class="comment">--&gt;</span></code></pre>
-<p>说明：这是一个多行注释，在代码有bug的时候，可以用注释标签来排错！</p>
+<p>对象就是指具体的英雄，比如德玛(garen)。就可以在 main 方法中 new 一个对象。</p>
+<pre><code class="java"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>{
+    Hero garen = <span class="keyword">new</span> Hero();
+    garen.name = <span class="string">"盖伦"</span>;
+    garen.attackDamage = <span class="number">71</span>;
+    garen.abilityPower = <span class="number">0</span>;
+    garen.armor = <span class="number">36</span>;
+    garen.magicResistance = <span class="number">32</span>;
+    garen.attackSpeed = <span class="number">0.69f</span>;
+    garen.cooldownReduction = <span class="number">0</span>;
+    garen.criticalStrike = <span class="number">0</span>;
+    garen.moveSpeed = <span class="number">350</span>;
+    garen.hp = <span class="number">600</span>;
+    garen.mp = <span class="number">0</span>;
+}</code></pre>
 
       
 
@@ -250,11 +209,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Web开发</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
         		</li>
       		
 		</ul>
@@ -310,7 +265,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://codemoe.cn/2020/03/05/HTML%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://codemoe.cn/2020/03/14/%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -324,18 +279,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/06/%E8%8B%B1%E8%AF%AD%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/16/%E6%AF%8F%E6%97%A5%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB-%E5%90%AC%E5%8A%9B/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          英语考试重点
+          每日英语阅读&amp;听力
         
       </div>
     </a>
   
   
-    <a href="/2020/03/01/CentOS7%E9%83%A8%E7%BD%B2Java11/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CentOS7部署Java11</div>
+    <a href="/2020/03/14/%E5%A4%A7%E5%A4%96%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">大外笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -362,7 +317,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML是什么"><span class="toc-number">1.</span> <span class="toc-text">HTML是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#元素"><span class="toc-number">2.</span> <span class="toc-text">元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#标签"><span class="toc-number">3.</span> <span class="toc-text">标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">4.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注释"><span class="toc-number">5.</span> <span class="toc-text">注释</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
