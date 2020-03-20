@@ -17,7 +17,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.ax1x.com/2020/03/05/3HuclR.png">
 <meta property="article:published_time" content="2020-03-05T11:28:49.000Z">
-<meta property="article:modified_time" content="2020-03-10T03:27:35.267Z">
+<meta property="article:modified_time" content="2020-03-18T07:17:55.928Z">
 <meta property="article:author" content="CodeMoe">
 <meta property="article:tag" content="Web开发">
 <meta property="article:tag" content="HTML">
@@ -189,6 +189,8 @@
     <span class="tag">&lt;/<span class="name">head</span>&gt;</span>
     <span class="tag">&lt;<span class="name">body</span>&gt;</span>
         这里是内容
+        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--h1-h6--&gt;</span>
+        <span class="tag">&lt;<span class="name">p</span>&gt;</span>段落<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
     <span class="tag">&lt;/<span class="name">body</span>&gt;</span>
 <span class="tag">&lt;/<span class="name">html</span>&gt;</span></code></pre>
 <p>以上就是一个基础的HTML结构，所有的内容(包括标题)都写在<code>&lt;html&gt;&lt;/html&gt;</code>中</p>
@@ -236,7 +238,11 @@
 <span class="comment">&lt;p&gt;这是文章的一个段落&lt;/p&gt;</span>
 <span class="comment"></span>
 <span class="comment">--&gt;</span></code></pre>
-<p>说明：这是一个多行注释，在代码有bug的时候，可以用注释标签来排错！</p>
+<p>说明：这是一个多行注释，在代码有bug的时候，可以用注释标签来排错！  </p>
+<h3 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h3><ol>
+<li>将源文件保存为UTF-8的编码格式</li>
+<li>在HTML文档中指定相应的编码格式</li>
+</ol>
 
       
 
@@ -362,7 +368,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML是什么"><span class="toc-number">1.</span> <span class="toc-text">HTML是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#元素"><span class="toc-number">2.</span> <span class="toc-text">元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#标签"><span class="toc-number">3.</span> <span class="toc-text">标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">4.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注释"><span class="toc-number">5.</span> <span class="toc-text">注释</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML是什么"><span class="toc-number">1.</span> <span class="toc-text">HTML是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#元素"><span class="toc-number">2.</span> <span class="toc-text">元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#标签"><span class="toc-number">3.</span> <span class="toc-text">标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">4.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注释"><span class="toc-number">5.</span> <span class="toc-text">注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编码"><span class="toc-number">6.</span> <span class="toc-text">编码</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -499,14 +505,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Web开发</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
@@ -519,11 +517,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">English</a>
+                <a href="javascript:void(0)" class="js-tag color1">Web开发</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">English</a>
               </li>
             
             <div class="clearfix"></div>
@@ -607,7 +609,7 @@ MathJax.Hub.Queue(function() {
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
           <div class="aboutme-wrap" id="js-aboutme">
-          程序设计，Web开发，开源爱好者，Linux&lt;br&gt;&lt;br&gt;坐标：山东烟台
+          软件工程专业在读&lt;br&gt;&lt;br&gt;程序设计，Web开发，Java，开源爱好者，Linux&lt;br&gt;天才之所以叫天才&lt;br&gt;是因为他们永远只做一件事&lt;br&gt;&lt;br&gt;坐标：山东烟台
       </div>
 
     	</section>
